@@ -56,5 +56,3 @@ Copy code
 git clone https://github.com/your-username/setlink.git
 
 
-Contribution
-Contributions are welcome! Feel free to fork the repository and submit pull requests for enhancements or bug fixes.
