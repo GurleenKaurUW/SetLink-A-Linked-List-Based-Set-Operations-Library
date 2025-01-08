@@ -2,24 +2,7 @@
 #include <iostream>
 #include <cassert>
 
-/**********************************************************************************
- * README 
- * ********************************************************************************
- * This starter code is a skeleton of the Set and Node classes.
- * You can modify this code to create your project_5 submission.
- * Any main() function or output will be ignoed by testing software.
- * A testing main() can be found on Learn.
- * 
- * From Project 5 Specification: 2.1 Development Stratigies
- * "First, implement the node class and all of its member functions. This should be
- *  straight-forward from the course notes, as they are the sam member functions as 
- *  for a linked list.
- * 
- *  Second, start with a skeleton, where each member function is defined, but where
- *  the default values of the return type is returned. ..."
- * 
- * The skeleton has been povided (below) for you to modify.
-*/
+
 
 class Set;
 class Node;
@@ -483,13 +466,7 @@ bool Set::operator!=( Set const &other ) const {
 }
 
 
-  ////////////////////////////////////////////
- /// Supplied Code for print Set objects  ///
-////////////////////////////////////////////
-/// @brief Overloads the << operator allowing the print of Set objects
-/// @param out The ostream to print to (e.g. std::cout <<)
-/// @param rhs The Set to print (e.g. << set_A)
-/// @note You do not need to edit or alter this code
+
 std::ostream &operator<<( std::ostream &out, Set const &rhs ) {
   out << "{";
   if ( !rhs.empty() ) {
@@ -502,19 +479,6 @@ std::ostream &operator<<( std::ostream &out, Set const &rhs ) {
  
   return out;
 }
-//debug
-// std::ostream &operator<<( std::ostream &out, Set const &rhs ) {
-//   out << "{ head: ("<<&rhs.p_head_<<") ["<<rhs.p_head_<<"] --> ";
-//   if ( !rhs.empty() ) {
-//     out << rhs.p_head_->value()<<" ("<<rhs.p_head_<<")  ["<<rhs.p_head_->next()<<"]";   
-//     for ( Node *ptr{ rhs.p_head_->next() }; ptr != nullptr; ptr = ptr->next() ) {
-//       out << " --> " << ptr->value()<<" ("<<ptr<<") ["<<ptr->next()<<"]";
-//     }
-//   }
-//   out << "}";
- 
-//   return out;
-// }
 
 // int main(){
 //   Set my_data_1{ 1, 3, 5, 2, 4, 8, 5, 3, 1 };
